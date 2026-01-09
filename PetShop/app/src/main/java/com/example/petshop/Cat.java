@@ -13,7 +13,6 @@ public class Cat extends Pet implements Pettable {
         //to initialize the parts of the object that belong to the parent
         super(name);
     }
-
     //Create child constructor to match every parent constructor
     public Cat(String name, Date birthDate) {
         super(name, birthDate);
@@ -21,6 +20,7 @@ public class Cat extends Pet implements Pettable {
 
     @Override
     public String speak() { //manditory "abstract"
+
         return "Meow";
     }
 

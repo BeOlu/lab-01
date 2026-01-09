@@ -8,13 +8,13 @@ public abstract class Pet{
     private String name;
     private Date birthDate;
 
+
     //this is a constructor. it is used to initialize a newly created object.
     //it is called after memory is allocated for the object
     public Pet(String name){
         this.name = name; //assign object to instance variable (name)
         this.birthDate = new Date();
     }
-
     public Pet(String name, Date birthDate) {
         this.name = name;
         this.birthDate = birthDate;
@@ -25,7 +25,6 @@ public abstract class Pet{
     public String getName() {
         return name;
     }
-
     //setter: allows other classes to change the value of a private field
     //gives the original class control over how the value is changed (prevents invalid value assignment)
     public void setName(String name) {
@@ -35,10 +34,14 @@ public abstract class Pet{
     public Date getBirthDate() {
         return birthDate;
     }
-
     public void setBirthDate(Date birthDate) {
         this.birthDate = birthDate;
     }
 
-    public abstract String speak(); //every subclass *must* (abstract) have this method but they will all be different
+
+
+    //abstract method
+    //every subclass *must* (abstract) have this method but they will all be implemented differently
+    public abstract String speak();
+
 }

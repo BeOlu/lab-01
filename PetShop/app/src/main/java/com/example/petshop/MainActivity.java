@@ -13,7 +13,7 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
 
     //ADD NEW MEMBER VARIABLES (FIELDS) HERE
-    //Pet pet = new Pet(""); //pet is abstract and cannot be instantiated
+    //Pet pet = new Pet(""); //pet is now abstract and cannot be instantiated
     Cat cat = new Cat("Lucy"); // instatiate a cat
     Dog dog = new Dog("Snoopy"); // instantiate a dog
     ArrayList<Pet> petList = new ArrayList<Pet>();
@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         petList.add(cat);
         petList.add(dog);
 
-        //add only objects that are allowed to implement the method to the list
+        //add only objects that are allowed to implement the method "pettable" to the list
         ArrayList<Pettable> pettablePets = new ArrayList<Pettable>();
         pettablePets.add(cat);
         pettablePets.add(dog);
