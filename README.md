@@ -7,7 +7,8 @@
 
 ## References and Resources
 
-List any resources used here, or simply put `N/A` if not applicable.
+CMPUT 301 Course Content and Instructors.
+Gemini AI Agent
 
 ## Verbal Collaboration
 
